@@ -1,0 +1,847 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>CamelBak Relay</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="humans.txt">
+
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+	<!-- Facebook Metadata /-->
+	<meta property="fb:page_id" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content=""/>
+	<meta property="og:title" content=""/>
+
+	<!-- Google+ Metadata /-->
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/gumby.css">
+
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+
+
+	<!-- BUGHERD - REMOVE BEFORE GOING LIVE -->
+	<script type='text/javascript'>
+		(function (d, t) {
+			var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			bh.type = 'text/javascript';
+			bh.src = '//www.bugherd.com/sidebarv2.js?apikey=z36hxdgk7jjxibsw5jzulw';
+			s.parentNode.insertBefore(bh, s);
+		})(document, 'script');
+	</script>
+
+</head>
+
+<body>
+
+	<!-- slideout nav -->
+	<nav class="slideout">
+		<ul>
+			<li><a href="#speed">Speed</a></li>
+			<li><a href="#filter-and-pitcher">Filter &amp; Pitcher</a></li>
+			<li><a href="#space-saving">Space-saving</a></li>
+			<li><a href="#videos">Sam Talbot</a></li>
+			<li><a href="#sustainable">Sustainability</a></li>
+			<li class="buy">
+				<a href="#">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="22.812 20.5 23 22" enable-background="new 22.812 20.5 23 22" xml:space="preserve">
+						<path d="M43.826,23.315H29.083l-0.769-1.751C28.163,21.221,27.827,21,27.458,21H24.59c-0.518,0-0.938,0.427-0.938,0.954 c0,0.527,0.42,0.955,0.938,0.955h2.258l0.761,1.731c0,0.001,0.001,0.001,0.001,0.001l2.753,6.265 c-0.422,0.167-0.807,0.408-1.096,0.771c-0.405,0.512-0.72,0.975-0.768,1.887c-0.09,1.727,0.808,2.377,1.351,2.611 c0.223,0.098,0.464,0.201,4.011,0.201c1.772,0,4.374-0.027,8.209-0.092c0.636-0.012,1.065-0.02,1.181-0.02 c0.519,0,0.938-0.426,0.938-0.955c0-0.525-0.42-0.953-0.938-0.953c-0.119,0-0.56,0.008-1.212,0.021 c-6.867,0.115-10.732,0.123-11.5,0.016c-0.129-0.096-0.185-0.342-0.165-0.729c0.018-0.336,0.051-0.406,0.354-0.789 c0.261-0.328,1.414-0.412,1.968-0.453c0.141-0.01,0.274-0.02,0.396-0.031c1.788-0.164,3.616-0.281,5.384-0.395 c1.779-0.117,3.621-0.234,5.433-0.4c0.484-0.045,0.854-0.456,0.854-0.951V24.27C44.764,23.742,44.345,23.315,43.826,23.315z M29.922,25.223h3.882l0.599,1.978h-3.611L29.922,25.223z M32.926,30.492c-0.112,0.01-0.234,0.019-0.364,0.028 c-0.098,0.007-0.198,0.015-0.301,0.022l-1.05-2.387h3.482l0.647,2.141C34.537,30.356,33.729,30.419,32.926,30.492z M34.786,25.223 h3.312l0.479,1.978h-3.191L34.786,25.223z M38.358,30.093c-0.678,0.043-1.364,0.088-2.055,0.136l-0.63-2.074h3.135l0.456,1.877 C38.963,30.053,38.657,30.073,38.358,30.093z M42.888,29.772c-0.89,0.073-1.783,0.137-2.673,0.198l-0.439-1.814h3.112V29.772z M42.888,27.201h-3.344l-0.48-1.978h3.824V27.201z M41.324,37.061c-0.949,0-1.721,0.785-1.721,1.75s0.771,1.75,1.721,1.75 s1.721-0.785,1.721-1.75S42.273,37.061,41.324,37.061z M31.003,37.061c-0.951,0-1.721,0.785-1.721,1.75s0.77,1.75,1.721,1.75 c0.95,0,1.719-0.785,1.719-1.75S31.953,37.061,31.003,37.061z">
+					</svg> Buy Online</a>
+			</li>
+			<li class="social">
+				<a href="#" class="fb" title="Facebook">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="48px" viewBox="152.966 129.907 25 48" enable-background="new 152.966 129.907 25 48" xml:space="preserve">
+						<path id="f" fill="#425E9B" d="M169.158,177.347v-21.462h7.204l1.077-8.364h-8.281v-5.341c0-2.42,0.671-4.071,4.144-4.071 l4.43-0.001v-7.482c-0.767-0.102-3.395-0.33-6.454-0.33c-6.386,0-10.757,3.897-10.757,11.056v6.169h-7.223v8.364h7.223v21.462 H169.158z">
+					</svg>
+				</a>
+				<a href="#" class="tw" title="Twitter">
+						<svg viewbox="0 0 2000 1625.36" width="40" height="32.5" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						  <path fill="#18B2E7" d="m 1999.9999,192.4 c -73.58,32.64 -152.67,54.69 -235.66,64.61 84.7,-50.78 149.77,-131.19 180.41,-227.01 -79.29,47.03 -167.1,81.17 -260.57,99.57 C 1609.3399,49.82 1502.6999,0 1384.6799,0 c -226.6,0 -410.328,183.71 -410.328,410.31 0,32.16 3.628,63.48 10.625,93.51 -341.016,-17.11 -643.368,-180.47 -845.739,-428.72 -35.324,60.6 -55.5583,131.09 -55.5583,206.29 0,142.36 72.4373,267.95 182.5433,341.53 -67.262,-2.13 -130.535,-20.59 -185.8519,-51.32 -0.039,1.71 -0.039,3.42 -0.039,5.16 0,198.803 141.441,364.635 329.145,402.342 -34.426,9.375 -70.676,14.395 -108.098,14.395 -26.441,0 -52.145,-2.578 -77.203,-7.364 52.215,163.008 203.75,281.649 383.304,284.946 -140.429,110.062 -317.351,175.66 -509.5972,175.66 -33.1211,0 -65.7851,-1.949 -97.8828,-5.738 181.586,116.4176 397.27,184.359 628.988,184.359 754.732,0 1167.462,-625.238 1167.462,-1167.47 0,-17.79 -0.41,-35.48 -1.2,-53.08 80.1799,-57.86 149.7399,-130.12 204.7499,-212.41">
+						</svg>
+				</a>
+			</li>
+			<li class="plain">
+				<a href="#"><img src="/img/logo-camelbak-sm.svg" alt="CamelBak" /></a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- main content -->
+	<div class="wrap content">
+
+		<!-- global header -->
+		<header class="global-header">
+			<form method="post" action="header.aspx?rec=1" id="Form1" class="header-search">
+				<div class="aspNetHidden"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwMjM4MjI3MzEPZBYCZg9kFgICAQ9kFgQCBA8WBB4EaHJlZgU/aHR0cDovL3d3dy5jYW1lbGJhay5jb20vZW4vSW50ZXJuYXRpb25hbC9NaWxpdGFyeS1UYWN0aWNhbC5hc3B4HgdWaXNpYmxlZ2QCBg8PFgIeCEltYWdlVXJsBT1odHRwOi8vc2hvcC5jYW1lbGJhay5jb20vaW1hZ2VzL2xheW91dC9jb21tb24vbWlsaXRhcnlidG4uanBnZGRkXjei6IWYGfinQOzjIQSyDoc8H1k=" /></div>
+				<!--
+				<div style="display: none">
+					<div id="CartHTML"></div>
+
+					<a href="http://shop.camelbak.com/store/shoppingcart.aspx"><div class="cart-logo"></div></a><span class="contentCount"><span id="CartItemsLBGet"
+					style="margin: 0 0 0 0;"></span><span id="CartTotalLBGet" style="display: none;"></span><span id="CartLiteralSgl" style="display:none;"></span><span id="CartLiteralPlural" style="display:none;"></span></span>
+					<div class="myBag"></div>
+				</div>
+				-->
+				<input type="hidden" id="UrlDetermination" value="http://shop.camelbak.com" />
+				<input type="hidden" id="TestMode" value="0" />
+
+
+				<article class="row utility-nav">
+					<div class="three columns push_five">
+						<a href="#" class="locator"><i class="icon-location"></i> Where to buy</a>
+					</div>
+					<div class="four columns prepend field">
+						<button class="search-submit adjoined"><i class="icon-search"></i></button>
+						<input type="search" class="search input" placeholder="Search CamelBak">
+
+						<!-- use this
+						<li class="field"><input class="search input" type="search" placeholder="Search" /></li>
+						-->
+
+					</div>
+				</article>
+			</form>
+
+			<div class="navbar">
+				<nav class="row">
+					<a class="toggle" gumby-trigger=".slideout" href="#"><i class="icon-menu"></i></a>
+					<ul class="main-nav">
+						<li>
+							<h1 class="logo">
+								<a href="/">
+									<img src="/img/logo-camelbak.svg" alt="CamelBak" class="valign" />
+								</a>
+							</h1>
+						</li>
+						<li class="parent">
+							<a href="">Shop <i class="icon-down-open"></i></a>
+							<div class="dropdown mega-menu">
+								<ul class="menu-panel">
+									<li>
+										<a href="http://shop.camelbak.com/store/landing.aspx?categoryid=754" class="col-header">Packs</a>
+										<ul>
+											<li><a href="http://shop.camelbak.com/packs/bike/browse-all/l/110">Bike</a></li>
+											<li><a href="http://shop.camelbak.com/packs/outdoor/browse-all/l/120">Outdoor</a></li>
+											<li><a href="http://shop.camelbak.com/packs/running/browse-all/l/130">Run</a></li>
+											<li><a href="http://shop.camelbak.com/packs/winter/browse-all/l/140">Winter</a></li>
+											<li><a href="http://shop.camelbak.com/packs/watersports/browse-all/l/150">Watersports</a></li>
+											<li><a href="http://shop.camelbak.com/packs/day/browse-all/l/160">Daypacks</a></li>
+											<li><a href="http://shop.camelbak.com/store/landing.aspx?categoryid=757">Military / Tactical</a></li>
+										</ul>
+									</li>
+									<li><a href="http://shop.camelbak.com/store/landing.aspx?categoryid=755" class="col-header">Water Bottles</a>
+										<ul>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/everyday-use-outdoor/l/201">Everyday / Outdoor</a></li>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/sport-bike/l/202">Sport / Bike</a></li>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/filtration/l/203">Filtering</a></li>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/insulated/l/207">Insulated</a></li>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/stainless-steel/l/205">Stainless Steel</a></li>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/glass/l/204">Glass</a></li>
+											<li><a href="http://shop.camelbak.com/bottles/water-bottles/kids/l/209">Kids</a></li>
+										</ul>
+									</li>
+									<li><a href="http://www.camelbak.com/en/Sports-Recreation/Purification/Intro.aspx" class="col-header">Purification</a>
+										<ul>
+											<li><a href="http://shop.camelbak.com/water-purification/bottles/all-clear-water-purifier/l/251">AllClear<sup>&trade;</sup></a></li>
+										</ul>
+									</li>
+									<li><a href="http://shop.camelbak.com/store/productslist.aspx?categoryid=3523&PageNo=0" class="col-header">Accessories</a>
+										<ul>
+											<li><a href="http://shop.camelbak.com/accessories/reservoirs-packs/reservoirs/l/310">Resevoirs</a></li>
+											<li><a href="http://shop.camelbak.com/accessories/replacements/reservoir/l/321">Resevoir Accessories</a></li>
+											<li><a href="http://shop.camelbak.com/accessories/replacements/bottle/l/322">Bottle Parts</a></li>
+											<li><a href="http://shop.camelbak.com/store/productslist.aspx?categoryid=328&sac=1">Bottle Accessories</a></li>
+											<li><a href="http://shop.camelbak.com/accessories/replacements/filters/l/324">Replacement Filters</a></li>
+											<li><a href="http://shop.camelbak.com/accessories/replacements/cleaning-kits/l/326">Cleaning Kits</a></li>
+											<li><a href="http://shop.camelbak.com/accessories/replacements/pack/l/323">Pack Accessories</a></li>
+											<li><a href="http://www.camelbak.com/store/landing.aspx?categoryid=760">Military / Tactical</a></li>
+										</ul>
+									</li>
+									<li><a href="http://shop.camelbak.com/store/landingdrinks.aspx?rec=1" class="col-header">Drinks</a>
+										<ul>
+											<li><a href="http://shop.camelbak.com/drinks/hydration-supplements/l/351">Performance</a></li>
+											<li><a href="http://shop.camelbak.com/drinks/everyday/l/353">Everyday</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="parent">
+							<a href="">Explore <i class="icon-down-open"></i></a>
+							<div class="dropdown">
+								<ul class="menu-panel">
+									<li><a href="http://www.camelbak.com/en/NV.aspx">Biking</a></li>
+									<li><a href="http://www.camelbak.com/en/Sports-Recreation/RunLanding.aspx">Running</a></li>
+									<li><a href="http://www.camelbak.com/Sports-Recreation/Support/Product-Care.aspx">Product Care &amp; Tips</a></li>
+									<li><a href="http://www.camelbak.com/Sports-Recreation/About-Us/Our-Story.aspx">About Camelbak</a></li>
+									<li><a href="http://www.camelbak.com/Sports-Recreation/Support/Got-Your-Bak.aspx">Lifetime Guarantee</a></li>
+									<li><a href="http://www.camelbak.com/Sports-Recreation/Fans.aspx">Athletes &amp; Teams</a></li>
+									<li><a href="http://www.camelbak.com/Sports-Recreation/About-Us/Events.aspx">Upcoming Events</a></li>
+									<li><a href="http://www.camelbak.com/Sports-Recreation/About-Us/Events.aspx">Music Festivals</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="parent"><a href="http://www.camelbak.com/hydrated.aspx">Hydrate</a></li>
+						<li class="beveled"><a href="http://www.camelbak.com/Military-Tactical.aspx">Military &amp; Tactical</a></li>
+						<li class="cart">
+							<a href="http://shop.camelbak.com/store/shoppingcart.aspx" title="Shopping Cart">
+								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="22.812 20.5 23 22" enable-background="new 22.812 20.5 23 22" xml:space="preserve">
+									<path d="M43.826,23.315H29.083l-0.769-1.751C28.163,21.221,27.827,21,27.458,21H24.59c-0.518,0-0.938,0.427-0.938,0.954 c0,0.527,0.42,0.955,0.938,0.955h2.258l0.761,1.731c0,0.001,0.001,0.001,0.001,0.001l2.753,6.265 c-0.422,0.167-0.807,0.408-1.096,0.771c-0.405,0.512-0.72,0.975-0.768,1.887c-0.09,1.727,0.808,2.377,1.351,2.611 c0.223,0.098,0.464,0.201,4.011,0.201c1.772,0,4.374-0.027,8.209-0.092c0.636-0.012,1.065-0.02,1.181-0.02 c0.519,0,0.938-0.426,0.938-0.955c0-0.525-0.42-0.953-0.938-0.953c-0.119,0-0.56,0.008-1.212,0.021 c-6.867,0.115-10.732,0.123-11.5,0.016c-0.129-0.096-0.185-0.342-0.165-0.729c0.018-0.336,0.051-0.406,0.354-0.789 c0.261-0.328,1.414-0.412,1.968-0.453c0.141-0.01,0.274-0.02,0.396-0.031c1.788-0.164,3.616-0.281,5.384-0.395 c1.779-0.117,3.621-0.234,5.433-0.4c0.484-0.045,0.854-0.456,0.854-0.951V24.27C44.764,23.742,44.345,23.315,43.826,23.315z M29.922,25.223h3.882l0.599,1.978h-3.611L29.922,25.223z M32.926,30.492c-0.112,0.01-0.234,0.019-0.364,0.028 c-0.098,0.007-0.198,0.015-0.301,0.022l-1.05-2.387h3.482l0.647,2.141C34.537,30.356,33.729,30.419,32.926,30.492z M34.786,25.223 h3.312l0.479,1.978h-3.191L34.786,25.223z M38.358,30.093c-0.678,0.043-1.364,0.088-2.055,0.136l-0.63-2.074h3.135l0.456,1.877 C38.963,30.053,38.657,30.073,38.358,30.093z M42.888,29.772c-0.89,0.073-1.783,0.137-2.673,0.198l-0.439-1.814h3.112V29.772z M42.888,27.201h-3.344l-0.48-1.978h3.824V27.201z M41.324,37.061c-0.949,0-1.721,0.785-1.721,1.75s0.771,1.75,1.721,1.75 s1.721-0.785,1.721-1.75S42.273,37.061,41.324,37.061z M31.003,37.061c-0.951,0-1.721,0.785-1.721,1.75s0.77,1.75,1.721,1.75 c0.95,0,1.719-0.785,1.719-1.75S31.953,37.061,31.003,37.061z">
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<a href="/" class="logo-sm"><img src="/img/logo-relay.svg" alt="CamelBak RELAY"></a>
+				</nav>
+			</div>
+
+		</header>
+
+
+		<!--  intro and product shot -->
+		<section id="intro">
+			<article class="panel">
+				<div class="row">
+					<h1>
+						<img src="/img/logo-relay.svg" alt="CamelBak RELAY">
+						<div>Freshly Filtered <span>Water. <em>Fast.</em></span></div>
+					</h1>
+				</div>
+				<!-- fixable nav -->
+				<img class="mobile-only" src="/img/bg-intro-sm.jpg" alt="">
+			</article>
+			<nav class="navbar wrap secondary" gumby-fixed="top">
+				<ul class="fixing-nav">
+					<li>
+						<a href="/"><img src="/img/logo-relay.svg" alt="CamelBak RELAY"></a>
+					</li>
+					<li><a href="#speed">Speed</a></li>
+					<li><a href="#filter-and-pitcher">Filter &amp; Pitcher</a></li>
+					<li><a href="#space-saving">Space-saving</a></li>
+					<li><a href="#videos">Sam Talbot</a></li>
+					<li><a href="#sustainable">Sustainability</a></li>
+					<li class="right social">
+						<a href="#" class="tw" title="Twitter">
+							<svg viewbox="0 0 2000 1625.36" width="40" height="32.5" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							  <path fill="#18B2E7" d="m 1999.9999,192.4 c -73.58,32.64 -152.67,54.69 -235.66,64.61 84.7,-50.78 149.77,-131.19 180.41,-227.01 -79.29,47.03 -167.1,81.17 -260.57,99.57 C 1609.3399,49.82 1502.6999,0 1384.6799,0 c -226.6,0 -410.328,183.71 -410.328,410.31 0,32.16 3.628,63.48 10.625,93.51 -341.016,-17.11 -643.368,-180.47 -845.739,-428.72 -35.324,60.6 -55.5583,131.09 -55.5583,206.29 0,142.36 72.4373,267.95 182.5433,341.53 -67.262,-2.13 -130.535,-20.59 -185.8519,-51.32 -0.039,1.71 -0.039,3.42 -0.039,5.16 0,198.803 141.441,364.635 329.145,402.342 -34.426,9.375 -70.676,14.395 -108.098,14.395 -26.441,0 -52.145,-2.578 -77.203,-7.364 52.215,163.008 203.75,281.649 383.304,284.946 -140.429,110.062 -317.351,175.66 -509.5972,175.66 -33.1211,0 -65.7851,-1.949 -97.8828,-5.738 181.586,116.4176 397.27,184.359 628.988,184.359 754.732,0 1167.462,-625.238 1167.462,-1167.47 0,-17.79 -0.41,-35.48 -1.2,-53.08 80.1799,-57.86 149.7399,-130.12 204.7499,-212.41">
+							</svg>
+						</a>
+					</li>
+					<li class="right social">
+						<a href="#" class="fb" title="Facebook">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="48px" viewBox="152.966 129.907 25 48" enable-background="new 152.966 129.907 25 48" xml:space="preserve">
+								<path id="f" fill="#425E9B" d="M169.158,177.347v-21.462h7.204l1.077-8.364h-8.281v-5.341c0-2.42,0.671-4.071,4.144-4.071 l4.43-0.001v-7.482c-0.767-0.102-3.395-0.33-6.454-0.33c-6.386,0-10.757,3.897-10.757,11.056v6.169h-7.223v8.364h7.223v21.462 H169.158z"/>
+							</svg>
+						</a>
+					</li>
+					<li class="right">
+						<div class="btn primary" id="buy-now">
+							<a href="#">
+								<i>
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="22.812 20.5 23 22" enable-background="new 22.812 20.5 23 22" xml:space="preserve">
+										<path d="M43.826,23.315H29.083l-0.769-1.751C28.163,21.221,27.827,21,27.458,21H24.59c-0.518,0-0.938,0.427-0.938,0.954
+										c0,0.527,0.42,0.955,0.938,0.955h2.258l0.761,1.731c0,0.001,0.001,0.001,0.001,0.001l2.753,6.265
+										c-0.422,0.167-0.807,0.408-1.096,0.771c-0.405,0.512-0.72,0.975-0.768,1.887c-0.09,1.727,0.808,2.377,1.351,2.611
+										c0.223,0.098,0.464,0.201,4.011,0.201c1.772,0,4.374-0.027,8.209-0.092c0.636-0.012,1.065-0.02,1.181-0.02
+										c0.519,0,0.938-0.426,0.938-0.955c0-0.525-0.42-0.953-0.938-0.953c-0.119,0-0.56,0.008-1.212,0.021
+										c-6.867,0.115-10.732,0.123-11.5,0.016c-0.129-0.096-0.185-0.342-0.165-0.729c0.018-0.336,0.051-0.406,0.354-0.789
+										c0.261-0.328,1.414-0.412,1.968-0.453c0.141-0.01,0.274-0.02,0.396-0.031c1.788-0.164,3.616-0.281,5.384-0.395
+										c1.779-0.117,3.621-0.234,5.433-0.4c0.484-0.045,0.854-0.456,0.854-0.951V24.27C44.764,23.742,44.345,23.315,43.826,23.315z
+										 M29.922,25.223h3.882l0.599,1.978h-3.611L29.922,25.223z M32.926,30.492c-0.112,0.01-0.234,0.019-0.364,0.028
+										c-0.098,0.007-0.198,0.015-0.301,0.022l-1.05-2.387h3.482l0.647,2.141C34.537,30.356,33.729,30.419,32.926,30.492z M34.786,25.223
+										h3.312l0.479,1.978h-3.191L34.786,25.223z M38.358,30.093c-0.678,0.043-1.364,0.088-2.055,0.136l-0.63-2.074h3.135l0.456,1.877
+										C38.963,30.053,38.657,30.073,38.358,30.093z M42.888,29.772c-0.89,0.073-1.783,0.137-2.673,0.198l-0.439-1.814h3.112V29.772z
+										 M42.888,27.201h-3.344l-0.48-1.978h3.824V27.201z M41.324,37.061c-0.949,0-1.721,0.785-1.721,1.75s0.771,1.75,1.721,1.75
+										s1.721-0.785,1.721-1.75S42.273,37.061,41.324,37.061z M31.003,37.061c-0.951,0-1.721,0.785-1.721,1.75s0.77,1.75,1.721,1.75
+										c0.95,0,1.719-0.785,1.719-1.75S31.953,37.061,31.003,37.061z"/>
+									</svg>
+								</i> Buy Now
+							</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="nav-fix"></div>
+		</section>
+
+
+		<!-- side by side videos/images -->
+		<section id="speed">
+			<article class="panel">
+				<img src="img/silo-pitchers-sm.png" alt="" class="mobile-only">
+				<h1>Relay filters water<br> at the speed<br> of your faucet</h1>
+
+				<div id="jPlayer"></div>
+
+				<p class="results"><a href="#">Click here to see full comparison test results</a></p>
+
+				<p class="play"><a href="#" id="play-compare"><img src="/img/icon-play.svg" alt="play video"></a></p>
+
+				<div class="meter">
+					<img class="dial" src="/img/10x-ani-dial.png" alt="">
+					<img src="/img/10x-ani-sans-dial.png" alt="">
+				</div>
+
+				<section class="progress-bars">
+					<div class="progress-bar" id="competition">
+						<i class="progress-value"></i>
+					</div>
+					<div class="progress-bar" id="camelbak-relay">
+						<i class="progress-value"></i>
+					</div>
+				</section>
+
+				<p class="legal">CamelBak Relay Double Filter Technology Filters as you fill and again as you pour - removing Chlorine, Taste and Odor</p>
+
+			</article>
+		</section>
+
+		<!-- twitter panel -->
+		<section id="show-us">
+			<article class="panel parallax" data-stellar-background-ratio="0.5">
+				<div class="row">
+					<article class="nine columns centered">
+						<h1>Show us how you <strong>#hatetowait</strong></h1>
+						<p>Still using that old drip filter? Then chances are you’ve got a few minutes to kill. Send us a tweet to let us know what you <em>#hatetowait</em> for and you could win a CamelBak Relay pitcher.</p>
+						<div class="btn twitter">
+							<a href="#">
+								<svg viewbox="0 0 2000 1625.36" width="40" height="32.5" version="1.1" xmlns="http://www.w3.org/2000/svg">
+									<path fill="#18B2E7" d="m 1999.9999,192.4 c -73.58,32.64 -152.67,54.69 -235.66,64.61 84.7,-50.78 149.77,-131.19 180.41,-227.01 -79.29,47.03 -167.1,81.17 -260.57,99.57 C 1609.3399,49.82 1502.6999,0 1384.6799,0 c -226.6,0 -410.328,183.71 -410.328,410.31 0,32.16 3.628,63.48 10.625,93.51 -341.016,-17.11 -643.368,-180.47 -845.739,-428.72 -35.324,60.6 -55.5583,131.09 -55.5583,206.29 0,142.36 72.4373,267.95 182.5433,341.53 -67.262,-2.13 -130.535,-20.59 -185.8519,-51.32 -0.039,1.71 -0.039,3.42 -0.039,5.16 0,198.803 141.441,364.635 329.145,402.342 -34.426,9.375 -70.676,14.395 -108.098,14.395 -26.441,0 -52.145,-2.578 -77.203,-7.364 52.215,163.008 203.75,281.649 383.304,284.946 -140.429,110.062 -317.351,175.66 -509.5972,175.66 -33.1211,0 -65.7851,-1.949 -97.8828,-5.738 181.586,116.4176 397.27,184.359 628.988,184.359 754.732,0 1167.462,-625.238 1167.462,-1167.47 0,-17.79 -0.41,-35.48 -1.2,-53.08 80.1799,-57.86 149.7399,-130.12 204.7499,-212.41"/>
+								</svg> Tweet It
+							</a>
+						</div>
+					</article>
+				</div>
+			</article>
+		</section>
+
+
+		<!-- aarons area of awesomness -->
+		<section id="filter-and-pitcher">
+
+			<div class="fixed-holder free">
+				<div class="pinFrame">
+
+					<aside>
+						<nav class="dot-nav">
+							<ul>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul>
+							<div class="curr-marker active"></div>
+							<div class="vert-bar"></div>
+						</nav>
+					</aside>
+
+					<canvas class="video-prototype" id="video-prototype" width="630" height="483"></canvas>
+
+					<!-- The Individual burlbs should be inside this container that pins. -->
+					<div class="rink">
+
+
+
+						<div class="intro-text controllable">
+							<h1>Double Filter Technology</h1>
+							<p>2x the filters, 10x the speed. Relay's ground-breaking dual filter system is the secret to delivering effective water filtration that's as fast as your faucet.</p>
+						</div>
+
+						<div class="still-text controllable">
+							<figure class="icon"></figure>
+							<h1>Filter Once for Freshness</h1>
+							<p>The Stage 1 Filter removes most contaminants from your tap water, leaving a small amount of chlorine to keep your water free from bacteria and other microbes if you plan on storing it in the fridge.</p>
+						</div>
+
+						<div class="spinning-text controllable">
+							<figure class="icon"></figure>
+							<h1>Filter Twice for Great Taste</h1>
+							<p>Right before the water pours out of the spout, it travels through the Stage 2 Filter. The Stage 2 Filter removes any remaining chlorine, leaving you with nothing but pure, clean H20</p>
+						</div>
+
+						<div class="combine-text controllable">
+							<figure class="icon"></figure>
+							<h1>Locking Lid Stays In Place</h1>
+							<p>No more super-slowmo trips from the faucet to the fridge. The Relay's lid snapps on and locks tight, ensuring that you won't slosh water all over the kitchen floor.</p>
+						</div>
+
+						<div class="pour-text controllable">
+							<figure class="icon"></figure>
+							<h1>No Spills When You Pour</h1>
+							<p>CamelBak Relay filters at the speed of your faucet, which means it doesn’t need a filling reservoir (located on top of the most pitchers), making Relay easy to balance and virtually impossible to spill.</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- // -->
+
+			</div>
+
+			<article class="panel intro">
+			</article>
+			<article class="panel still">
+			</article>
+			<article class="panel spinning">
+			</article>
+			<article class="panel unify">
+			</article>
+			<article class="panel pour">
+			</article>
+		</section>
+
+		<!-- static version of filter and pitcher -->
+		<section id="filter-pitcher-static">
+			<article class="panel">
+				<ul class="cycle-slideshow" data-cycle-slides="li" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-prev=".filter-prev" data-cycle-next=".filter-next" data-cycle-pager=".filter-pager" data-cycle-auto-height="calc">
+					<li>
+						<div class="render">
+							<img src="http://placehold.it/800/600" alt="">
+						</div>
+						<h1>Double Filter Technology</h1>
+						<div class="filter-pager">
+							<i class="filter-prev"></i>
+							<i class="filter-next"></i>
+						</div>
+						<p>2x the filters, 10x the speed. Relay's ground-breaking dual filter system is the secret to delivering effective water filtration that's as fast as your faucet.</p>
+					</li>
+
+					<li>
+						<div class="render">
+							<img src="http://placehold.it/799/599" alt="">
+						</div>
+						<h1>Filter once for freshness</h1>
+						<div class="filter-pager">
+							<i class="filter-prev"></i>
+							<i class="filter-next"></i>
+						</div>
+						<p>2x the filters, 10x the speed. Relay's ground-breaking dual filter system is the secret to delivering effective water filtration that's as fast as your faucet.</p>
+					</li>
+
+					<li>
+						<div class="render">
+							<img src="http://placehold.it/800/600" alt="">
+						</div>
+						<h1>Filter Twice for Great Taste</h1>
+						<div class="filter-pager">
+							<i class="filter-prev"></i>
+							<i class="filter-next"></i>
+						</div>
+						<p>Right before the water pours out of the spout, it travels through the Stage 2 Filter. The Stage 2 Filter removes any remaining chlorine, leaving you with nothing but pure, clean H20</p>
+					</li>
+
+					<li>
+						<div class="render">
+							<img src="http://placehold.it/801/601" alt="">
+						</div>
+						<h1>Locking Lid Stays In Place</h1>
+						<div class="filter-pager">
+							<i class="filter-prev"></i>
+							<i class="filter-next"></i>
+						</div>
+						<p>No more super-slowmo trips from the faucet to the fridge. The Relay's lid snapps on and locks tight, ensuring that you won't slosh water all over the kitchen floor.</p>
+					</li>
+
+					<li>
+						<div class="render">
+							<img src="http://placehold.it/802/602" alt="">
+						</div>
+						<h1>No Spills When You Pour</h1>
+						<div class="filter-pager">
+							<i class="filter-prev"></i>
+							<i class="filter-next"></i>
+						</div>
+						<p>CamelBak has eliminated the filling reservoir (normally located on top of the basin), making the Relay easy to balance and virtually impossible to spill.</p>
+					</li>
+				</ul>
+			</article>
+		</section>
+
+
+		<!-- video carousel -->
+		<section id="videos">
+			<article class="panel">
+				<ul class="cycle-slideshow" data-cycle-slides="li" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-pager=".video-pager">
+					<li>
+						<h1 class="caption">Meet RELAY. Freshly Filtered Water. Fast.</h1>
+						<img src="/img/fpo-vid1.jpg" class="poster-frame" alt="">
+						<i class="play-btn" data-video="http://www.youtube.com/embed/pqJN35lwH-I"></i>
+					</li>
+					<li>
+						<h1 class="caption">Double Filter Technology</h1>
+						<img src="/img/fpo-vid2.jpg" class="poster-frame" alt="">
+						<i class="play-btn" data-video="http://youtube.com/embed/_vibXfoArkM"></i>
+					</li>
+					<li>
+						<h1 class="caption">Quick Start Overview</h1>
+						<img src="/img/fpo-vid3.jpg" class="poster-frame" alt="">
+						<i class="play-btn" data-video="http://youtube.com/embed/01TdZCF8AqY"></i>
+					</li>
+				</ul>
+				<div class="video-overlay"><iframe></iframe><i class="icon-cancel close"></i></div>
+
+				<span class="prev">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="6 12 36 36" enable-background="new 6 12 36 36" xml:space="preserve">
+						<path fill="#FFFFFF" d="M28.203,29.248c0,0,0,0-0.002,0l0,0l-6.95-7.185c-0.402-0.415-1.052-0.415-1.454,0 c-0.402,0.414-0.402,1.088,0,1.502L26.021,30l-6.224,6.434c-0.401,0.415-0.403,1.087,0,1.505c0.401,0.415,1.051,0.413,1.453-0.002 l6.952-7.187C28.604,30.336,28.604,29.663,28.203,29.248z"/>
+					</svg>
+				</span>
+				<span class="next">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="6 12 36 36" enable-background="new 6 12 36 36" xml:space="preserve">
+						<path fill="#FFFFFF" d="M28.203,29.248c0,0,0,0-0.002,0l0,0l-6.95-7.185c-0.402-0.415-1.052-0.415-1.454,0 c-0.402,0.414-0.402,1.088,0,1.502L26.021,30l-6.224,6.434c-0.401,0.415-0.403,1.087,0,1.505c0.401,0.415,1.051,0.413,1.453-0.002 l6.952-7.187C28.604,30.336,28.604,29.663,28.203,29.248z"/>
+					</svg>
+				</span>
+
+			    <div class="video-pager"></div>
+
+			</article>
+		</section>
+
+
+		<!-- panel 6: space-saving design -->
+		<section id="space-saving">
+			<article class="panel">
+				<div class="icon-text">
+					<i class="icon"><img src="/img/icon-ruler-xl.png" alt=""></i>
+					<h1>Space-Saving Design</h1>
+					<p>CamelBak Relay stores up to ten cups of fresh water without sacrificing valuable fridge space. The ergonomic and space-saving design fits easily inside most refrigerator doors.</p>
+				</div>
+				<figure class="visual parallax" data-stellar-background-ratio="0.5"></figure>
+			</article>
+		</section>
+
+
+		<!-- panel 7: sustainable  -->
+		<section id="sustainable">
+			<article class="panel parallax" data-stellar-background-ratio="0.5">
+				<article class="row">
+					<div class="ten columns centered">
+						<h1>Relay's long lasting filter. Good for you. <span class="nobr">Great for the environment.</span></h1>
+						<p><strong>Sustainability matters.</strong> That's why we've designed the Relay Fresh filter to last 4 months, twice as long as other filters on the market. Which means less plastic waste and fewer trips to the store for replacements.</p>
+
+						<figure class="maths">
+							<img src="/img/math-sustainable.svg" alt="One Filter = 600 Plastic Bottles; lasts 4 months, 2x longer than other filters">
+						</figure>
+					</div>
+				</article>
+			</article>
+		</section>
+
+
+		<!-- specific product info -->
+		<section id="product">
+			<article class="panel">
+
+				<div class="row">
+					<article class="four columns push_one carousel">
+						<header class="top-hdr">
+							<img src="/img/logo-relay.svg" alt="CamelBak RELAY" class="logo-relay">
+							<h1>Freshly Filtered Water. Fast.<br> For <em>$36.99</em></h1>
+						</header>
+
+						<div class="product-shots cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-pager=".product-pager">
+    						<img src="/img/product-blue.jpg" alt="">
+							<img src="/img/product-purple.jpg" alt="">
+							<img src="/img/product-charcoal.jpg" alt="">
+						</div>
+					</article>
+					<article class="five columns push_one c2a">
+						<header>
+							<img src="/img/logo-relay.svg" alt="CamelBak RELAY" class="logo-relay">
+							<h1>Freshly Filtered Water. Fast. For <em>$36.99</em></h1>
+						</header>
+						<p>CamelBak Relay is available at your local Target store, Amazon and right here at CamelBak.com in three designer colors: Aqua, Clear/Charcoal, and Purple. Click below to buy now or to find one in a store near you.</p>
+
+						<h2>Available Colors</h2>
+						<div class="product-pager"></div>
+
+						<div class="row buttons">
+							<p class="btn primary">
+								<a href="#">
+								<i>
+									<svg class="cart" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="22px" viewBox="22.812 20.5 23 22" enable-background="new 22.812 20.5 23 22" xml:space="preserve">
+										<path d="M43.826,23.315H29.083l-0.769-1.751C28.163,21.221,27.827,21,27.458,21H24.59c-0.518,0-0.938,0.427-0.938,0.954
+										c0,0.527,0.42,0.955,0.938,0.955h2.258l0.761,1.731c0,0.001,0.001,0.001,0.001,0.001l2.753,6.265
+										c-0.422,0.167-0.807,0.408-1.096,0.771c-0.405,0.512-0.72,0.975-0.768,1.887c-0.09,1.727,0.808,2.377,1.351,2.611
+										c0.223,0.098,0.464,0.201,4.011,0.201c1.772,0,4.374-0.027,8.209-0.092c0.636-0.012,1.065-0.02,1.181-0.02
+										c0.519,0,0.938-0.426,0.938-0.955c0-0.525-0.42-0.953-0.938-0.953c-0.119,0-0.56,0.008-1.212,0.021
+										c-6.867,0.115-10.732,0.123-11.5,0.016c-0.129-0.096-0.185-0.342-0.165-0.729c0.018-0.336,0.051-0.406,0.354-0.789
+										c0.261-0.328,1.414-0.412,1.968-0.453c0.141-0.01,0.274-0.02,0.396-0.031c1.788-0.164,3.616-0.281,5.384-0.395
+										c1.779-0.117,3.621-0.234,5.433-0.4c0.484-0.045,0.854-0.456,0.854-0.951V24.27C44.764,23.742,44.345,23.315,43.826,23.315z
+										 M29.922,25.223h3.882l0.599,1.978h-3.611L29.922,25.223z M32.926,30.492c-0.112,0.01-0.234,0.019-0.364,0.028
+										c-0.098,0.007-0.198,0.015-0.301,0.022l-1.05-2.387h3.482l0.647,2.141C34.537,30.356,33.729,30.419,32.926,30.492z M34.786,25.223
+										h3.312l0.479,1.978h-3.191L34.786,25.223z M38.358,30.093c-0.678,0.043-1.364,0.088-2.055,0.136l-0.63-2.074h3.135l0.456,1.877
+										C38.963,30.053,38.657,30.073,38.358,30.093z M42.888,29.772c-0.89,0.073-1.783,0.137-2.673,0.198l-0.439-1.814h3.112V29.772z
+										 M42.888,27.201h-3.344l-0.48-1.978h3.824V27.201z M41.324,37.061c-0.949,0-1.721,0.785-1.721,1.75s0.771,1.75,1.721,1.75
+										s1.721-0.785,1.721-1.75S42.273,37.061,41.324,37.061z M31.003,37.061c-0.951,0-1.721,0.785-1.721,1.75s0.77,1.75,1.721,1.75
+										c0.95,0,1.719-0.785,1.719-1.75S31.953,37.061,31.003,37.061z"/>
+									</svg>
+								</i> BUY ONLINE
+							</a>
+							</p>
+							<p class="btn info">
+								<a href="#">
+									<svg class="logo-target" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="200px" height="32px" viewBox="0 0 200 32" enable-background="new 0 0 200 32" xml:space="preserve">
+										<g>
+											<path fill="#FFFFFF" d="M135.923,16.04c0,8.737-7.079,15.818-15.817,15.818c-8.734,0-15.813-7.081-15.813-15.818
+												c0-8.736,7.079-15.82,15.813-15.82C128.844,0.22,135.923,7.303,135.923,16.04 M120.105,5.487c-5.828,0-10.552,4.726-10.552,10.553
+												c0,5.828,4.724,10.552,10.552,10.552c5.832,0,10.554-4.725,10.554-10.552C130.659,10.212,125.938,5.487,120.105,5.487"/>
+											<path fill="#FFFFFF" d="M120.105,10.617c-2.991,0-5.418,2.428-5.418,5.422c0,2.994,2.427,5.422,5.418,5.422
+												c2.995,0,5.425-2.429,5.425-5.422C125.53,13.045,123.101,10.617,120.105,10.617"/>
+											<polygon fill="#FFFFFF" points="144.002,12.445 140.763,12.445 140.763,10.444 149.611,10.444 149.611,12.445 146.377,12.445
+												146.377,21.246 144.002,21.246 	"/>
+											<path fill="#FFFFFF" d="M153.862,13.109h0.032l1.359,3.961h-2.795L153.862,13.109z M148.585,21.246h2.404l0.849-2.408h4.037
+												l0.816,2.408h2.469l-4.04-10.802h-2.437L148.585,21.246z"/>
+											<path fill="#FFFFFF" d="M162.474,12.291h2.598c1.061,0,1.636,0.449,1.636,1.496c0,1.09-0.575,1.54-1.636,1.54h-2.598V12.291z
+												 M160.095,21.246h2.379v-4.222h2.373c1.191,0,1.633,0.496,1.804,1.634c0.115,0.857,0.086,1.91,0.37,2.588h2.377
+												c-0.421-0.611-0.407-1.881-0.45-2.562c-0.079-1.088-0.409-2.22-1.576-2.522v-0.033c1.194-0.484,1.71-1.439,1.71-2.707
+												c0-1.632-1.226-2.979-3.159-2.979h-5.827V21.246z"/>
+											<path fill="#FFFFFF" d="M178.521,20.016c-0.831,1.078-1.92,1.487-2.969,1.487c-3.339,0-5.309-2.497-5.309-5.618
+												c0-3.208,1.97-5.699,5.309-5.699c2.213,0,4.294,1.362,4.559,3.81h-2.275c-0.266-1.192-1.159-1.814-2.283-1.814
+												c-2.129,0-2.932,1.814-2.932,3.703c0,1.802,0.803,3.617,2.932,3.617c1.545,0,2.438-0.833,2.57-2.324h-2.389v-1.775h4.545v5.843
+												h-1.518L178.521,20.016z"/>
+											<polygon fill="#FFFFFF" points="181.898,10.444 189.976,10.444 189.976,12.445 184.273,12.445 184.273,14.753 189.503,14.753
+												189.503,16.596 184.273,16.596 184.273,19.247 190.092,19.247 190.092,21.246 181.898,21.246 	"/>
+											<polygon fill="#FFFFFF" points="194.384,12.445 191.154,12.445 191.154,10.444 200,10.444 200,12.445 196.766,12.445
+												196.766,21.246 194.384,21.246 	"/>
+											<path fill="#FFFFFF" d="M197.855,20.387c0-0.491,0.396-0.857,0.861-0.857c0.465,0,0.857,0.366,0.857,0.857
+												c0,0.495-0.393,0.861-0.857,0.861C198.251,21.248,197.855,20.882,197.855,20.387 M198.717,21.094c0.394,0,0.703-0.3,0.703-0.707
+												c0-0.4-0.31-0.703-0.703-0.703c-0.397,0-0.709,0.303-0.709,0.703C198.008,20.794,198.319,21.094,198.717,21.094"/>
+											<path fill="#FFFFFF" d="M198.355,20.864h0.202v-0.359h0.203c0.1,0,0.134,0.041,0.149,0.141c0.01,0.073,0.007,0.157,0.034,0.219h0.2
+												c-0.038-0.055-0.036-0.162-0.041-0.216c-0.004-0.094-0.034-0.189-0.132-0.217c0.103-0.043,0.144-0.125,0.144-0.231
+												c0-0.137-0.103-0.25-0.267-0.25h-0.493V20.864z M198.558,20.104h0.221c0.089,0,0.137,0.041,0.137,0.13s-0.048,0.127-0.137,0.127
+												h-0.221V20.104z"/>
+											<g>
+												<path fill="#FFFFFF" d="M5.798,10.42l4.223,10.808h-1.59l-1.18-3.256H2.68l-1.211,3.256H0L4.208,10.42H5.798z M6.796,16.763
+													l-1.801-5.041h-0.03l-1.832,5.041H6.796z"/>
+											</g>
+										</g>
+										<g>
+											<path fill="#FFFFFF" d="M12.094,21.229L8.294,10.42h1.544l3.087,9.37h0.03l3.119-9.37h1.498l-3.844,10.808H12.094z"/>
+										</g>
+										<g>
+											<path fill="#FFFFFF" d="M22.568,10.42l4.223,10.808h-1.59l-1.18-3.256H19.45l-1.211,3.256h-1.468l4.208-10.808H22.568z
+												 M23.567,16.763l-1.801-5.041h-0.03l-1.832,5.041H23.567z"/>
+											<path fill="#FFFFFF" d="M29.349,10.42v10.808H27.91V10.42H29.349z"/>
+										</g>
+										<g>
+											<path fill="#FFFFFF" d="M33.193,10.42v9.597h5.722v1.211h-7.16V10.42H33.193z"/>
+										</g>
+										<g>
+											<path fill="#FFFFFF" d="M45.909,10.42l4.223,10.808h-1.59l-1.181-3.256h-4.57l-1.211,3.256h-1.468l4.208-10.808H45.909z
+												 M46.908,16.763l-1.802-5.041h-0.03l-1.832,5.041H46.908z"/>
+											<path fill="#FFFFFF" d="M55.111,10.42c0.231,0,0.482,0.003,0.749,0.008c0.268,0.006,0.532,0.021,0.795,0.045
+												c0.262,0.025,0.507,0.062,0.733,0.114c0.229,0.05,0.422,0.126,0.584,0.227c0.353,0.212,0.652,0.505,0.899,0.878
+												c0.248,0.374,0.372,0.833,0.372,1.377c0,0.575-0.139,1.072-0.416,1.491c-0.279,0.42-0.675,0.729-1.189,0.932v0.029
+												c0.666,0.142,1.176,0.445,1.529,0.909s0.529,1.029,0.529,1.696c0,0.393-0.07,0.775-0.211,1.15
+												c-0.143,0.373-0.352,0.703-0.629,0.989c-0.277,0.289-0.62,0.521-1.029,0.698c-0.408,0.176-0.881,0.265-1.415,0.265h-5.222V10.42
+												H55.111z M55.504,15.067c0.818,0,1.406-0.144,1.765-0.431s0.536-0.719,0.536-1.294c0-0.383-0.06-0.686-0.182-0.909
+												c-0.12-0.222-0.286-0.394-0.499-0.514c-0.212-0.122-0.456-0.199-0.733-0.234s-0.573-0.054-0.887-0.054h-2.875v3.436H55.504z
+												 M56.231,20.018c0.636,0,1.132-0.173,1.491-0.516c0.357-0.342,0.536-0.817,0.536-1.422c0-0.354-0.064-0.646-0.196-0.878
+												c-0.131-0.232-0.305-0.417-0.522-0.553c-0.217-0.137-0.466-0.232-0.749-0.288c-0.282-0.056-0.574-0.083-0.877-0.083h-3.285v3.739
+												H56.231z"/>
+											<path fill="#FFFFFF" d="M62.997,10.42v9.597h5.722v1.211H61.56V10.42H62.997z"/>
+											<path fill="#FFFFFF" d="M77.438,10.42v1.211h-6.025v3.436h5.616v1.211h-5.616v3.739h6.069v1.211h-7.507V10.42H77.438z"/>
+										</g>
+										<g>
+											<path fill="#FFFFFF" d="M87.957,10.42l4.223,10.808h-1.59l-1.18-3.256h-4.571l-1.212,3.256h-1.468l4.208-10.808H87.957z
+												 M88.955,16.763l-1.801-5.041h-0.029l-1.832,5.041H88.955z"/>
+										</g>
+										<g>
+											<path fill="#FFFFFF" d="M90.713,11.631V10.42h8.642v1.211h-3.601v9.597h-1.439v-9.597H90.713z"/>
+										</g>
+									</svg>
+								</a>
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<article class="row feature-icons">
+					<figure>
+						<div><img src="/img/icon-10x.png" alt=""></div>
+						<figcaption>Fitlers 10x faster</figcaption>
+					</figure>
+					<figure>
+						<div><img src="/img/icon-ruler.png" alt=""></div>
+						<figcaption>Space-saving design</figcaption>
+					</figure>
+					<figure>
+						<div><img src="/img/icon-pour.png" alt=""></div>
+						<figcaption>Controlled pour</figcaption>
+					</figure>
+					<figure>
+						<div><img src="/img/icon-filter.png" alt=""></div>
+						<figcaption>Double filter technology</figcaption>
+					</figure>
+					<figure>
+						<div><img src="/img/icon-dishwasher.png" alt=""></div>
+						<figcaption>Dishwasher Safe</figcaption>
+					</figure>
+					<figure>
+						<div><img src="/img/icon-lock.png" alt=""></div>
+						<figcaption>Spill-proof locking lid</figcaption>
+					</figure>
+					<figure>
+						<div><img src="/img/icon-cup.png" alt=""></div>
+						<figcaption>10-cup filter pitcher</figcaption>
+					</figure>
+				</article>
+			</article>
+		</section>
+
+
+		<!-- global footer -->
+		<footer class="global-footer">
+			<article class="row footer-links">
+				<div class="three columns">
+					<a href="#"><img src="http://shop.camelbak.com/images/layout/common/lifetime-gurantee.png" alt="GOT YOUR BAK Lifetime Guarantee"></a>
+				</div>
+				<div class="three columns">
+					<h1>CUSTOMER SERVICE</h1>
+					<ul>
+						<li><a href="#">MY ACCOUNT</a></li>
+						<li><a href="#">PRODUCT CARE</a></li>
+						<li><a href="#">WARRANTY</a></li>
+						<li><a href="#">ORDER STATUS</a></li>
+						<li><a href="#">EASY RETURNS</a></li>
+						<li><a href="#">SHIPPING POLICY</a></li>
+						<li><a href="#">ONLINE GIFT CERTIFICATES</a></li>
+					</ul>
+				</div>
+				<div class="three columns">
+					<h1>ABOUT CAMELBAK</h1>
+					<ul>
+						<li><a href="#">OUR STORY</a></li>
+						<li><a href="#">GIVING BAK</a></li>
+						<li><a href="#">SOCIAL RESPONSIBILITY</a></li>
+						<li><a href="#">SUPPLY CHAIN ACT OF 2010</a></li>
+						<li><a href="#">PRESS</a></li>
+						<li><a href="#">CAREERS</a></li>
+						<li><a href="#">CONTACT US</a></li>
+					</ul>
+				</div>
+				<div class="three columns">
+					<h1>CONNECT</h1>
+
+					<form>
+						<div class="field append">
+							<input type="email" class="email input" placeholder="email updates">
+							<button class="btn warn"><i class="icon-right-open"></i></button>
+						</div>
+					</form>
+
+					<ul class="social-links">
+						<li class="square-fb"><a href="#">FACEBOOK</a></li>
+						<li class="square-tw"><a href="#">TWITTER</a></li>
+						<li class="square-pi"><a href="#">PINTEREST</a></li>
+					</ul>
+				</div>
+			</article>
+			<article class="row simple-footer">
+				<h1 class="logo">
+					<a href="/">
+						<img src="/img/logo-camelbak-sm.svg" alt="CamelBak">
+					</a>
+				</h1>
+			</article>
+
+			<article class="row legal">
+				<div class="ten columns centered">
+					<p>COPYRIGHT &copy; 2014 CAMELBAK PRODUCTS, LLC. ALL RIGHTS RESERVED. <a href="#">PRIVACY POLICY</a> | <a href="#">TERMS AND CONDITIONS</a></p>
+				</div>
+			</article>
+		</footer>
+
+	</div>
+
+
+
+	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
+	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
+	<script>
+		var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+		if(!oldieCheck) {
+			document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+		} else {
+			document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+		}
+	</script>
+	<script>
+		if(!window.jQuery) {
+			if(!oldieCheck) {
+				document.write('<script src="js/libs/jquery-2.0.2.min.js"><\/script>');
+			} else {
+				document.write('<script src="js/libs/jquery-1.10.1.min.js"><\/script>');
+			}
+		}
+	</script>
+	<!--
+	Include gumby.js followed by UI modules followed by gumby.init.js
+	Or concatenate and minify into a single file -->
+	<script gumby-touch="js/libs" src="js/libs/gumby.js"></script>
+	<script src="js/libs/ui/gumby.fixed.js"></script>
+	<script src="js/libs/ui/gumby.toggleswitch.js"></script>
+	<script src="js/libs/ui/gumby.navbar.js"></script>
+<!--
+	/* do we have RETINA images */
+	<script src="js/retina-1.1.0.js"></script>
+
+	/* using gumby skiplinks? */
+	<script src="js/libs/ui/gumby.skiplink.js"></script>
+
+	<script src="js/libs/ui/gumby.checkbox.js"></script>
+	<script src="js/libs/ui/gumby.radiobtn.js"></script>
+	<script src="js/libs/ui/gumby.tabs.js"></script>
+	<script src="js/libs/ui/jquery.validation.js"></script>
+-->
+	<script src="js/libs/gumby.init.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<!--
+		NEW! - Asset Manager for responsible script includes - based on media queries.
+		Only uses 1 script tag, loads polyfill if needed, loads js/dev/assetmanager.js
+		https://github.com/weblinc/media-match
+	-->
+	<script>
+		Modernizr.load({
+			test: window.matchMedia,
+		    nope: "js/dev/libs/media.match.min.js",
+			load: "js/dev/assetmanager.js"
+		});
+	</script>
+
+	<!-- Change UA-XXXXX-X to be your site's ID -->
+	<!--<script>
+	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	Modernizr.load({
+	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	});
+	</script>-->
+
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+
+  </body>
+</html>
