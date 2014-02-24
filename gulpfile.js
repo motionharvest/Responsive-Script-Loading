@@ -15,27 +15,13 @@ var gulp = require('gulp'),
 
 gulp.task('default', ['watch']);
 
-var dir = {
-	sass : './sass/**/*.scss',
-	//process: './preprocess/**/*.scss',
-	views: './**/*.html',
-	js: './js/dev/**/*.js'
-};
-/*
-	gulp watch
-	-> Create server for LiveReload Chrome Extension (working)
-	-> Watch folder, and update when ready
-*/
 gulp.task('watch', function(){
 	server.listen(35729, function (err) {
 		if (err) {
 			return console.log(err)
 		};
 	});
-	gulp.watch(dir.sass, ['gumbyCompile']);
-	gulp.watch(dir.process, ['customCompile']);
-	gulp.watch([dir.views, dir.js], ['reload']);
-	
+	gulp.watch(['./js/**/*.js'], ['reload']);
 });
 
 /*
@@ -55,17 +41,20 @@ gulp.task('gumbyCompile', function(){
 });
 
 
-/*gulp.task('customCompile', function(){
-	console.log("[customComple] Running...");
+gulp.task('compileJS', function() {
 	
-	gulp.src(dir.process)
-		.pipe(compass({
-			css: 'css',
-			sass: 'preprocess'
-		}))
-		.pipe(gulp.dest('./css/'))
-		.pipe(livereload(server));
-});*/
+	gulp.src('./js/libs/large/*.js')
+		.pipe(concat("./js/build/large.min.js"))
+		.pipe(gulp.dest('./dist/'));
+	
+	gulp.src('./js/libs/medium/*.js')
+		.pipe(concat("./js/build/medium.min.js"))
+		.pipe(gulp.dest('./dist/'));
+	
+	gulp.src('./js/libs/small/*.js')
+		.pipe(concat("./js/build/small.min.js"))
+		.pipe(gulp.dest('./dist/'));
+});
 
 
 /*
@@ -85,8 +74,8 @@ gulp.task('reload', function(){
 var stdin = process.openStdin();
 stdin.setEncoding( 'utf8' );
 var abilities = {
-	reload: function (){
-		gulp.run('reload');
+	minify: function (){
+		gulp.run('compileJS');
 	}
 }
 stdin.on( 'data', function( key ){

@@ -39,7 +39,7 @@ function RenderFarm( $window ){
     var _i;
     var activeRender;
     
-    //handle scrolling internally, why not
+    //handle scrolling internally
     var _nextActive;
     var _currActive;
     var  _top;
@@ -52,11 +52,15 @@ function RenderFarm( $window ){
 	
     $window.on('scroll.desktop', function(e){
          
+         //scrap the scroll on command, if need be.
          if(speedTrap){
             return;
         }
         
+        //find the top of the screen
         _top = $window.scrollTop();
+        
+        //inver the bottom based on the top, plus the bottom
         _bottom = _top + $window.height();
         _middle = _top + ($window.height() * .5);
         
@@ -70,10 +74,8 @@ function RenderFarm( $window ){
 			If a group container on the screen is not active, activate() it.
 			Find the distance between the middle of the viewport, and the middle of an active group.
 			Given half the viewport added to half the group height, standardize the proportion through the sroll to a value of -1 to 1,
-				where -1 is as the group container surfaces from the bottom of the page
-				and 1 is as the group container floats off the top of the page
-			Pass 
-			
+				where -1 is when a group container surfaces from the bottom of the page
+				and 1 is as the group container floats off the top of the page	
         */
         for(_i = 0;  _i < _groups.length; _i++){
 		
